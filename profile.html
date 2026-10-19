@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile | Socially</title>
+    <link rel="stylesheet" href="Profile.css" />
+    <script src="profile.js" defer></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="Social.html" class="logo">Socially</a>
+      <a href="Social.html" class="profile-back-link">← Back to Home</a>
+    </header>
+
+    <main class="profile-page">
+      <section class="profile-card">
+        <div class="profile-cover"></div>
+
+        <div class="profile-details">
+          <div class="profile-avatar">U</div>
+
+          <h1 id="profileName">Umar Zia</h1>
+          <p id="profileUsername">@umarzia</p>
+          <p id="profileBio">Welcome to my Socially profile!</p>
+
+          <div class="profile-stats">
+            <div>
+              <strong id="profilePosts">0</strong>
+              <span>Posts</span>
+            </div>
+
+            <div>
+              <strong id="profileFollowers">0</strong>
+              <span>Followers</span>
+            </div>
+
+            <div>
+              <strong id="profileFollowing">0</strong>
+              <span>Following</span>
+            </div>
+          </div>
+
+          <button id="editProfileBtn" class="edit-profile-btn">
+            Edit Profile
+          </button>
+
+          <div id="editProfileForm" class="edit-profile-form hidden">
+            <h2>Edit Your Profile</h2>
+
+            <label for="editName">Full Name</label>
+            <input type="text" id="editName" value="Umar Zia" maxlength="50" />
+
+            <label for="editUsername">Username</label>
+            <input
+              type="text"
+              id="editUsername"
+              value="umarzia"
+              maxlength="30"
+            />
+
+            <label for="editBio">Bio</label>
+            <textarea id="editBio" maxlength="160" rows="3">
+Welcome to my Socially profile!</textarea
+            >
+
+            <div class="edit-form-actions">
+              <button
+                type="button"
+                id="saveProfileBtn"
+                class="edit-profile-btn"
+              >
+                Save Changes
+              </button>
+
+              <button type="button" id="cancelEditBtn" class="cancel-edit-btn">
+                Cancel
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
